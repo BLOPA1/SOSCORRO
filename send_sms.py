@@ -1,8 +1,8 @@
 from twilio.rest import Client
 
 # Your Account SID and Auth Token from console.twilio.com
-account_sid = "AC48afc639c87adb25a7bb6df59b38988f"
-auth_token  = "40e4070ee4a8ede2611170e08f38b10a"
+account_sid = "Sacar el codigo de la API de Twilio"
+auth_token  = "Token de autentificacion de API en Twilio"
 
 client = Client(account_sid, auth_token)
 
