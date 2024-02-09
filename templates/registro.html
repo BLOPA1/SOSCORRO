@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de datos</title>
+</head>
+<body>
+    <h1>registro</h1>
+    <!-- Inicio create - crear -->
+    <h2 >Registo de datos del usuario</h2>
+    <form action="{{ url_for('registro') }}", method="POST">
+
+        <div class="pt-2 pl-8">
+            <input name='nombre' type="text" placeholder="Nombre: ">
+            <input name='apellido' type="text" placeholder="Apellido: ">
+            <input name='edad' type="number" placeholder="Edad: ">
+            <input name="cedula_de_identidad" type="text" placeholder="Cédula de identidad: ">
+            <input name="telefono" type="text" placeholder="Nro. de teléfono: ">
+            <input name='tipo_de_sangre' type="text" placeholder="Tipo de sangre: ">
+            <input name='donante_de_organos' type="text" placeholder="Donante de órganos: ">
+            <input name="alergia_a" type="text" placeholder="A qué eres alérgico: ">
+            <input name="direccion" type="text" placeholder="Indica tu dirección en el mapa: ">
+        </div>
+        <div class="pt-4 pl-8">
+            <button type="submit">
+                Guardar datos
+            </button>
+        </div>
+    </form>
+    <!-- Fin create - crear -->
+</body>
+</html>

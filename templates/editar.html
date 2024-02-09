@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Editar</title>
+</head>
+<body>
+    <h1 class="font-bold pt-4 pl-8 ">Aqui podras editar al participante seleccionado</h1>
+
+    <form action="{{ url_for('editar', id = usuario.id) }}" method="POST">
+
+        <div class="pt-2 pl-8">
+            <input type="text" name="nombre" placeholder="Nombre: " value="{{usuario.nombre}}">
+            <input type="text" name="apellido" placeholder="Apellido: " value="{{usuario.apellido}}">
+            <input type="number" name="edad" placeholder="Edad: " value="{{usuario.edad}}">
+            <input type="text" name="cedula_de_identidad" placeholder="Cédula de identidad: " value="{{usuario.cedula_de_identidad}}">
+            <input type="text" name="telefono" placeholder="Nro. Teléfono: " value="{{usuario.telefono}}">
+            <input type="text" name="tipo_de_sangre" placeholder="Tipo de sangre: " value="{{usuario.tipo_de_sangre}}">
+            <input type="number" name="donante_de_organos" placeholder="Donante de órganos: " value="{{usuario.donante_de_organos}}">
+            <input type="text" name="alergia_a" placeholder="A qué eres alérgico: " value="{{usuario.alergia_a}}">
+            <input type="text" name="direccion" placeholder="Dirección: " value="{{usuario.direccion}}">
+        </div>
+
+        <button type="submit" class="font-bold text-sky-600 pt-4 pl-8" >
+            Editar
+        </button>
+        <button class="font-bold pt-4 pl-8 text-sky-600">
+            <a href="{{ url_for('index') }}">Cancelar</a>
+        </button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+</head>
+<body>
+    <h2 >Iniciar sesión</h2>
+    <form action="{{ url_for('iniciar_sesion') }}" method="POST">
+
+        <div class="pt-2 pl-8">
+            <input name="cedula_de_identidad" type="text" placeholder="Cédula de identidad">
+        </div>
+        <div class="pt-4 pl-8">
+            <button type="submit">
+                Iniciar sesión
+            </button>
+        </div>
+    </form>
+</body>
+</html>
